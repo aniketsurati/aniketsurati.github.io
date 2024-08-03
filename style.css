@@ -94,14 +94,17 @@ footer {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-.form-container button {
-  padding: 0.7em;
-  color: #fff;
-  background-color: #007BFF;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+
+button {
+  display: block;
+  margin: auto;
 }
-.form-container button:hover {
-  background-color: #0056b3;
+
+#explore-more {
+  display: flex;
+  justify-content: center;
+}
+
+#explore-more button {
+  margin: 20px;
 }
