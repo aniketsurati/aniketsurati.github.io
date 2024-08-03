@@ -1,25 +1,37 @@
 *{
     font-family: monospace;
+    color: #0f2424;
+    box-sizing: border-box;
+}
+
+body {
+  margin-bottom: 100px;
 }
 
 h1, h2, p {
     text-align: center;
 }
 
+p {
+  color: #00000066;
+  font-weight: bold;
+}
+
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex; 
+  justify-content: center;
+  clear: both;
+  background-image: linear-gradient(to bottom right, #285d58, #6abeb0);
   }
 
   footer li, footer a{
     display:inline-block;
+    padding: 5px 10px;
     color: white;
-    padding: 10px;
   }
 
   .project-container {
@@ -98,6 +110,21 @@ footer {
 button {
   display: block;
   margin: auto;
+  background-color: white;
+  text-decoration: none;
+  padding: 14px 35px;
+  border-color: #2e736c;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #2e736c;
+  color: white;
+}
+
+button:active {
+  background-color: #285d58;
+  color: white;
 }
 
 #explore-more {
@@ -107,4 +134,12 @@ button {
 
 #explore-more button {
   margin: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer a {
+  text-decoration: underline;
 }
