@@ -34,10 +34,12 @@ footer {
     color: white;
   }
 
-  .project-container {
+  .project-carousel {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+    justify-content: center;
 }
 
 .box {
@@ -142,4 +144,17 @@ a {
 
 footer a {
   text-decoration: underline;
+}
+
+#download-resume img {
+  display: block;
+  margin: auto;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
 }
