@@ -12,6 +12,16 @@ h1, h2, p {
     text-align: center;
 }
 
+h1 span {
+  font-size: 50px;
+  font-family: impact, sans-serif;
+  color: #244b49;
+}
+
+h1 em {
+font-size: 20px;
+}
+
 p {
   color: #00000066;
   font-weight: bold;
