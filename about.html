@@ -5,18 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Aniket Surati</title>
     <link rel="stylesheet" href="./style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <a href="/"><img src="/resources/assets/logo.png" height="60" width="156" /></a>
         <nav>
-            <ul class="navigation-bar">
-                <li class="navigation-item"><a href="/">Home</a></li>
-                <li class="navigation-item"><a href="/resume.html">My Resume</a></li>
-                <li class="navigation-item"><a href="/about.html">About + Contact</a></li>
-                <li class="navigation-item"><a href="/">Projects</a></li>
-            </ul>
+            <div class="navbar">
+                <a href="/"><img src="/resources/assets/logo.png" class="logo"  /></a>
+                <ul class="navigation-bar">
+                    <li class="navigation-item"><a href="/">Home</a></li>
+                    <li class="navigation-item"><a href="/resume.html">My Resume</a></li>
+                    <li class="navigation-item"><a href="/about.html" class="active">About + Contact</a></li>
+                    <li class="navigation-item"><a href="/">Projects</a></li>
+                </ul>
+                <div class="toggle-button">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="dropdown">
+                <ul class="navigation-bar">
+                    <li class="navigation-item"><a href="/">Home</a></li>
+                    <li class="navigation-item"><a href="/resume.html">My Resume</a></li>
+                    <li class="navigation-item"><a href="/about.html" class="active">About + Contact</a></li>
+                    <li class="navigation-item"><a href="/">Projects</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <h1>About Aniket</h1>
@@ -24,8 +37,10 @@
         <h2>Product Management Leader</h2>
         <h3>Innovative, Data-Driven, Versatile Leader</h3>
     </section> -->
-    <section id="bio">
+    <section class="bio">
         <h2>Bio</h2>
+        <img src="./resources/assets/Aniket headshot.JPG" alt="Picture of Aniket Surati">
+        <img src="./resources/assets/Aniket football.JPG" alt="Picture of Aniket Surati playing Football">
         <p>Innovative, Data-Driven, Versatile Product Management Leader.
             <br><br>
             As a seasoned product leader, I have a unique perspective on building products that are both technically sound and user-friendly. I am passionate about understanding user behavior and creating an optimized experience that eases pain points and brings joy. At the same time, I bring a data-driven approach to building products, using data and analytics to gain insights into user behavior and make informed decisions that drive growth.
@@ -35,16 +50,16 @@
             I have also had the opportunity to mentor product managers and help them develop the skills and knowledge they need to succeed. This has allowed me to hone my leadership skills and gain a deeper understanding of the product development process.
             <br><br>
             By thinking through the entire customer journey, I am able to challenge assumptions and identify opportunities to improve the product experience. As a product leader, I am committed to using data and analytics to drive innovation and deliver products that exceed our customers' expectations.</p>
-            <img src="" alt="Picture of Aniket Surati">
-            <img src="" alt="Picture 2 of Aniket Surati">
+            
     </section>
     <section id="connect">
         <h2>Let's Connect</h2>
         <p>Please don't hesitate to reach out if you would like to chat about a potential opportunitie, side project, or just connect. I am always open to new conversations and will do my best to respond to you in a timely manner. Cheers!</p>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/aniket-surati/" target="_blank"><img src="" alt="LinkedIn | Aniket Surati"></a>
-            <a href="mailto:aniketsurati08@gmail.com" target="_blank"><img src="" alt="Email | Aniket Surati"></a>
-            <a href="tel:+447742751882"><img src="" alt="Phone | Aniket Surati"></a>
+
+            <a href="https://www.linkedin.com/in/aniket-surati/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:aniketsurati08@gmail.com" target="_blank" class="email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+447742751882" class="phone"><i class="fa-solid fa-phone"></i></a>
         </div>
     </section>
     <section id="contact-form">
@@ -72,6 +87,7 @@
         </div>
     </section>
     <script src="/main.js"></script>
+    <script src="./script.js" async></script>
 </body>
 <footer>
     <ul>

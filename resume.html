@@ -5,17 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume | Aniket Surati</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <a href="/"><img src="/resources/assets/logo.png" height="60" width="156" /></a>
         <nav>
-            <ul class="navigation-bar">
-                <li class="navigation-item"><a href="/">Home</a></li>
-                <li class="navigation-item"><a href="/resume.html">My Resume</a></li>
-                <li class="navigation-item"><a href="/about.html">About + Contact</a></li>
-                <li class="navigation-item"><a href="/">Projects</a></li>
-            </ul>
+            <div class="navbar">
+                <a href="/"><img src="/resources/assets/logo.png" class="logo"  /></a>
+                <ul class="navigation-bar">
+                    <li class="navigation-item"><a href="/" >Home</a></li>
+                    <li class="navigation-item"><a href="/resume.html" class="active">My Resume</a></li>
+                    <li class="navigation-item"><a href="/about.html">About + Contact</a></li>
+                    <li class="navigation-item"><a href="/">Projects</a></li>
+                </ul>
+                <div class="toggle-button">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="dropdown">
+                <ul class="navigation-bar">
+                    <li class="navigation-item"><a href="/" >Home</a></li>
+                    <li class="navigation-item"><a href="/resume.html" class="active">My Resume</a></li>
+                    <li class="navigation-item"><a href="/about.html">About + Contact</a></li>
+                    <li class="navigation-item"><a href="/">Projects</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <h1>My Resume</h1>
@@ -26,62 +40,95 @@
     </section>
     <section id="my-certifications">
         <h2>Certifications</h2>
-        <div class="project-carousel">
+        <div class="skill-carousel">
             <div class="box">
-                <img src="https://via.placeholder.com/150" alt="Image 1">
-                <p>Six Sigma</p>
+                <img src="./resources/skills/Pittsburgh.png" alt="Lean Six Sigma">
+                <p>Lean Six Sigma</p>
             </div>
             <div class="box">
-                <img src="https://via.placeholder.com/150" alt="Image 2">
+                <img src="./resources/skills/pfsa.jpg" alt="PFSA Scouting">
                 <p>PFSA Scouting</p>
             </div>
             <div class="box">
-                <img src="https://via.placeholder.com/150" alt="Image 3">
-                <p>Full Stack </p>
+                <img src="./resources/skills/codeacademy.webp" alt="Full Stack">
+                <p>Full Stack</p>
             </div>
         </div>
     </section>
     <section id="my-skills">
         <h2>Skills</h2>
-        <div class="project-carousel">
+        <div class="skill-carousel">
             <div class="box">
-                <img src="https://via.placeholder.com/150" alt="Image 1">
-                <p>Skill 1</p>
+                <img src="./resources/skills/ab test.png" alt="A/B Testing">
+                <p>A/B Testing</p>
             </div>
             <div class="box">
-                <img src="https://via.placeholder.com/150" alt="Image 2">
-                <p>Skill 2</p>
+                <img src="./resources/skills/SQL.png" alt="SQL">
+                <p>SQL</p>
             </div>
             <div class="box">
-                <img src="https://via.placeholder.com/150" alt="Image 3">
-                <p>Skill 3</p>
+                <img src="./resources/skills/figma.webp" alt="Figma">
+                <p>Figma</p>
             </div>
             <div class="box">
-                <img src="https://via.placeholder.com/150" alt="Image 1">
-                <p>Skill 1</p>
+                <img src="./resources/skills/html.png" alt="HTML">
+                <p>HTML</p>
             </div>
             <div class="box">
-                <img src="https://via.placeholder.com/150" alt="Image 2">
-                <p>Skill 2</p>
+                <img src="./resources/skills/css.png" alt="CSS">
+                <p>CSS</p>
             </div>
             <div class="box">
-                <img src="https://via.placeholder.com/150" alt="Image 3">
-                <p>Skill 3</p>
+                <img src="./resources/skills/javascript.webp" alt="Javascript">
+                <p>Java- script</p>
             </div>
             <div class="box">
-                <img src="https://via.placeholder.com/150" alt="Image 1">
-                <p>Skill 1</p>
+                <img src="./resources/skills/agile.png" alt="Agile">
+                <p>Agile</p>
             </div>
             <div class="box">
-                <img src="https://via.placeholder.com/150" alt="Image 2">
-                <p>Skill 2</p>
+                <img src="./resources/skills/mixpanel.webp" alt="Mixpanel">
+                <p>Mixpanel</p>
             </div>
             <div class="box">
-                <img src="https://via.placeholder.com/150" alt="Image 3">
-                <p>Skill 3</p>
+                <img src="./resources/skills/google analytics.webp" alt="Google Analytics">
+                <p>Google Analytics</p>
             </div>
+            <div class="box">
+                <img src="./resources/skills/tableau.svg" alt="Tableau">
+                <p>Tableau</p>
+            </div>
+            <div class="box">
+                <img src="./resources/skills/posthog.png" alt="PostHog">
+                <p>PostHog</p>
+            </div>
+            <div class="box">
+                <img src="./resources/skills/typeform.webp" alt="Typeform">
+                <p>Typeform</p>
+            </div>
+            <div class="box">
+                <img src="./resources/skills/webflow.webp" alt="Webflow">
+                <p>Webflow</p>
+            </div>
+            <div class="box">
+                <img src="./resources/skills/onesignal.png" alt="One Signal">
+                <p>One Signal</p>
+            </div>        
+            <div class="box">
+                <img src="./resources/skills/github.png" alt="GitHub">
+                <p>GitHub</p>
+            </div>  
+            <div class="box">
+                <img src="./resources/skills/notion.png" alt="Notion">
+                <p>Notion</p>
+            </div>  
+            <div class="box">
+                <img src="./resources/skills/mailchimp.webp" alt="Mailchimp">
+                <p>Mail- chimp</p>
+            </div>      
         </div>
     </section>
+    <script src="./script.js" async></script>
 </body>
 <footer>
     <ul>
