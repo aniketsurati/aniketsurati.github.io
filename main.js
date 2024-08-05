@@ -16,3 +16,14 @@ contactForm.addEventListener('submit', function(event) {
     formOverlay.style.display = 'none'; // Hide the form overlay
     alert('Thank you for contacting us. Your message has been sent.'); // Show a thank you message
 });
+
+const toggleButton = document.querySelector('.toggle-button')
+const toggleButtonIcon = document.querySelector('.toggle-button i')
+const dropDownMenu = document.querySelector('.dropdown')
+
+toggleButton.onclick = function() {
+dropDownMenu.classList.toggle('open')
+const isOpen = dropDownMenu.classList.contains('open')
+
+toggleButtonIcon.classList = isOpen ? 'fa-solid fa-x' : 'fa-solid fa-bars'
+};

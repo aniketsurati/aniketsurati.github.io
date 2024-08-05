@@ -2,10 +2,85 @@
     font-family: monospace;
     color: #0f2424;
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  height:100vh - 50px;
+}
+
+header{
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar{
+  width: 100%;
+height: 60px;
+
+padding: 3% 5% ;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.navbar ul {
+display: flex;
+gap: 2rem;
+}
+
+.logo{
+  width: 40%;
+}
+
+.toggle-button{
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #00000066;
+}
+
+nav a:hover{
+  color: #0f2424;
+}
+
+nav a.active{
+  color: #0f2424;
+}
+
+.dropdown {
+  position:absolute;
+  display: none;
+  top: 60px;
+  width: 100%;
+  height: 0vh;
+  background: rgba(255, 255, 255);
+  backdrop-filter: blur(15px);
+  overflow:hidden;
+  left: 0;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown.open {
+  height: 90vh;
+}
+
+.dropdown li {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1, h2, p {
@@ -148,17 +223,11 @@ button:active {
   margin: 20px;
 }
 
-a {
-  text-decoration: none;
-}
-
-footer a {
-  text-decoration: underline;
-}
 
 #download-resume img {
   display: block;
   margin: auto;
+  max-width: 100%;
 }
 
 .social-links {
@@ -167,4 +236,17 @@ footer a {
   gap: 20px;
   padding: 20px;
   justify-content: center;
+}
+
+@media only screen and (max-width: 992px) {
+ .navbar li {
+  display: none;
+ }
+ .toggle-button {
+display: block;
+ }
+
+ .dropdown{
+  display: block;
+ }
 }
