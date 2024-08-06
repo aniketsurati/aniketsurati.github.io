@@ -36,8 +36,16 @@ display: flex;
 gap: 2rem;
 }
 
+.logo-link {
+  display: inline-block;
+  line-height: 0;
+  width: 150px;
+}
+
 .logo{
-  width: 40%;
+  display: block;
+    width: 100%; /* Ensures image scales within the anchor */
+    height: auto;
 }
 
 .toggle-button{
