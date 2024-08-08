@@ -390,10 +390,11 @@ display: inline-block;
   position: absolute;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
   z-index: 10;
-  width: 100%;
+  width: 250px;
   background: rgba(255, 255, 255);
   backdrop-filter: blur(15px);
   overflow:hidden;
+  transform: translateX(-25%);
 }
 
 .project-menu a {
@@ -401,7 +402,7 @@ display: inline-block;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: center;
 }
 
 .project-menu a:hover {
@@ -422,7 +423,8 @@ display: block;
  }
 
  .dropdown{
-  display: block;
+  display: flex;
+  justify-content: center;
  }
 
 .bio {
@@ -453,5 +455,36 @@ display: block;
 }
 
 
+.drop-project:hover .fa-solid.fa-caret-up{
+  display: inline;
+}
+
+.drop-project:hover .project-button{
+  color: #0f2424;
+}
+
+.drop-project:hover .fa-solid.fa-caret-down{
+  display: none;
+}
+
+.drop-project {
+display: flex;
+}
+
+.project-menu {
+  box-shadow: none;
+  width: 100%;
+  background: none;
+  backdrop-filter: none;
+  transform: translateX(0%);
+  transform: translateY(60%);
+}
+
+
+.drop-project:hover .project-menu {
+  display: flex;
+  flex-direction: column;
+  
+}
 
 }
