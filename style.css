@@ -365,7 +365,7 @@ button:active {
   color: #00000066;
 }
 
-.fa-solid.fa-caret-up{
+.nav-project .fa-solid.fa-caret-up{
   display: none;
 }
 
@@ -405,7 +405,7 @@ display: inline-block;
   text-align: center;
 }
 
-.project-menu a:hover {
+.nav-project .project-menu a:hover {
   color: #0f2424;
 }
 
@@ -456,19 +456,9 @@ display: block;
 
 .drop-project .project-button {
   color: #00000066;
+  cursor: pointer;
 }
 
-.drop-project:hover .fa-solid.fa-caret-up{
-  display: inline;
-}
-
-.drop-project:hover .project-button{
-  color: #0f2424;
-}
-
-.drop-project:hover .fa-solid.fa-caret-down{
-  display: none;
-}
 
 .drop-project {
 display: flex;
@@ -483,11 +473,8 @@ display: flex;
   transform: translateY(60%);
 }
 
-
-.drop-project:hover .project-menu {
-  display: flex;
-  flex-direction: column; 
-  
-} 
+.drop-project .project-menu a:focus {
+  color: #0f2424;
+}
 
 }
