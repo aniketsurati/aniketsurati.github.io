@@ -454,6 +454,9 @@ display: block;
   height: 200px;
 }
 
+.drop-project .project-button {
+  color: #00000066;
+}
 
 .drop-project:hover .fa-solid.fa-caret-up{
   display: inline;
@@ -483,8 +486,8 @@ display: flex;
 
 .drop-project:hover .project-menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   
-}
+} 
 
 }
