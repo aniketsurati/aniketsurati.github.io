@@ -413,6 +413,15 @@ display: inline-block;
   display: block;
 }
 
+.case-summary img{
+  width: 55%;
+  height:350px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 992px) {
  .navbar li, .nav-project a {
   display: none;
@@ -459,6 +468,9 @@ display: block;
   cursor: pointer;
 }
 
+.drop-project .active {
+  color: #0f2424 !important;
+}
 
 .drop-project {
 display: flex;
