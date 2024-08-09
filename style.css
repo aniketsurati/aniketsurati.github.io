@@ -286,7 +286,7 @@ button {
   padding: 14px 35px;
   border-color: #2e736c;
   border-radius: 5px;
-
+  cursor: pointer;
 }
 
 
@@ -413,8 +413,39 @@ display: inline-block;
   display: block;
 }
 
+.study h2 {
+  margin-bottom: 30px;
+}
+
+.study {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.study-text {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.study-image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.study-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit:cover;
+}
+
 .case-summary img{
-  width: 55%;
+  width: 70%;
   height:350px;
   object-fit: cover;
   display: block;
@@ -422,6 +453,79 @@ display: inline-block;
   border-radius: 10px;
 }
 
+.case-summary h3 {
+  padding-top: 0px;
+}
+
+.case-summary p {
+padding-bottom: 20px;
+width: 85%;
+margin: auto;
+}
+
+.case-background {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #2e736c;
+}
+
+.case-background h2, .case-background p, .takeaways h3, .takeaways li, .next-steps h3, .next-steps li, .follow h2 {
+  color:antiquewhite;
+}
+
+.case-background p {
+  width: 85%;
+  margin: auto;
+}
+
+.role {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.role h2, .case-background h2 {
+  margin: 10px;
+}
+
+.follow {
+  background-color: #2e736c;
+  padding: 15px;
+}
+
+.followup {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 0px;
+}
+
+.followup h3 {
+  padding-top: 30px;
+  
+}
+
+.followup .takeaways {
+  flex: 1;
+  margin-right: 30px;
+  
+}
+
+.followup .next-steps {
+  flex: 1;
+  margin-left: 30px;
+}
+
+.back-top {
+  margin-top: 50px;
+}
+
+/* MEDIA QUERIES START HERE */
 @media only screen and (max-width: 992px) {
  .navbar li, .nav-project a {
   display: none;
@@ -487,6 +591,41 @@ display: flex;
 
 .drop-project .project-menu a:focus {
   color: #0f2424;
+}
+
+.study {
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+}
+
+.study-text {
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+
+.study-image {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.study-image img {
+  width: 70%;
+}
+
+.followup {
+  flex-direction: column; 
+}
+
+.followup .takeaways {
+  margin-right: 0px;
+}
+
+.followup .next-steps {
+  margin-left: 0px;
 }
 
 }
