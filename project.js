@@ -2,7 +2,7 @@ const projects = {
     "ellevate-football": {
         title: "Ellevate Football",
         date: "Training Plans | 2024",
-        image: "./resources/projects/ellevate football.jpg",
+        cover: "./resources/projects/ellevate football.jpg",
         description: "Description for Ellevate Football project."
     },
     "manchester-united": {
@@ -30,6 +30,9 @@ const projects = {
         document.title += ' ' + project.title
         document.getElementById('case-title').textContent = project.title;
         document.querySelector('.case-summary h3').textContent = project.date
-        document.querySelector('.case-summary img').src = project.image
+        document.querySelector('.case-summary img').src = project.cover
  
+
     }
+
+   
