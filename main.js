@@ -17,3 +17,14 @@ contactForm.addEventListener('submit', function(event) {
     alert('Thank you for contacting us. Your message has been sent.'); // Show a thank you message
 });
 
+document.querySelector('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    emailjs.sendForm('service_texpn4q', 'template_whz1i62', this)
+        .then(function() {
+            console.log('SUCCESS!');
+            alert('Your message has been sent!');
+        }, function(error) {
+            console.log('FAILED...', error);
+            alert('Oops... something went wrong.');
+        });
+});

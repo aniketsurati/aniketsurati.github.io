@@ -21,7 +21,18 @@ const projects = {
         next1: "What are we going to do next about this very cool and interesting project.",
         next2: "How are we ever going to top all the amazing shit we did here, along with making sure this stands out by itself.",        
         next3: "Have we peaked too soon or have we not done enough about this project."
+    }, 
 
+    "manchester-united": {
+        title: "Manchester United"
+    },
+
+    "macys": {
+        title: "Macy's"
+    },
+
+    "vested-finance": {
+        title: "Vested Finance"
     }
  
 };
