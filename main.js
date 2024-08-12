@@ -17,7 +17,7 @@ contactForm.addEventListener('submit', function(event) {
     alert('Thank you for contacting us. Your message has been sent.'); // Show a thank you message
 });
 
-document.querySelector('contact-form').addEventListener('submit', function(event) {
+document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault(); 
     emailjs.sendForm('service_texpn4q', 'template_whz1i62', this)
         .then(function() {
