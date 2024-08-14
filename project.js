@@ -24,15 +24,75 @@ const projects = {
     }, 
 
     "manchester-united": {
-        title: "Manchester United"
+        title: "Manchester United",
+        date: "D2C Monetization Strategy | 2021",
+        cover: "./resources/projects/manutd.jpg",
+        summary: "",
+        background: "",
+        role: "",
+        research: "",
+        planning: "",
+        development: "",
+        launch: "",
+        image1: "",
+        image2: "",
+        image3: "",
+        image4: "",
+        alt: "Picture of the Manchester United project",
+        takeaway1: "",
+        takeaway2: "",
+        takeaway3: "",
+        next1: "",
+        next2: "",        
+        next3: ""
     },
 
     "macys": {
-        title: "Macy's"
+        title: "Macy's",
+        date: "Lean Labs | 2018",
+        cover: "./resources/projects/macys.jpg",
+        summary: "",
+        background: "",
+        role: "",
+        research: "",
+        planning: "",
+        development: "",
+        launch: "",
+        image1: "",
+        image2: "",
+        image3: "",
+        image4: "",
+        alt: "Picture of the Macy's project",
+        takeaway1: "",
+        takeaway2: "",
+        takeaway3: "",
+        next1: "",
+        next2: "",        
+        next3: ""
     },
 
     "vested-finance": {
-        title: "Vested Finance"
+        title: "Vested Finance",
+        date: "Transfer Funds | 2020",
+        cover: "./resources/projects/vested finance.jpg",
+        summary: "",
+        background: "",
+        role: "",
+        research: "",
+        planning: "",
+        development: "",
+        launch: "",
+        image1: "",
+        image2: "",
+        image3: "",
+        image4: "",
+        alt: "Picture of the Vested Finance project",
+        takeaway1: "",
+        takeaway2: "",
+        takeaway3: "",
+        next1: "",
+        next2: "",        
+        next3: ""
     }
  
 };
