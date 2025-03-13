@@ -414,7 +414,7 @@ display: inline-block;
 }
 
 .study h2 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .study {
@@ -471,7 +471,7 @@ margin: auto;
   background-color: #2e736c;
 }
 
-.case-background h2, .case-background p, .takeaways h3, .takeaways li, .next-steps h3, .next-steps li, .follow h2 {
+.case-background h2, .case-background p, .takeaways h3, .takeaways li, .takeaways li b, .next-steps h3, .next-steps li, .next-steps li b, .follow h2 {
   color:antiquewhite;
 }
 
